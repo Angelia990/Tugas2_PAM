@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:alpha="1.8"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+
+        tools:layout_editor_absoluteX="177dp">
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/inter"
+            android:text="> Hello Angelia"
+            android:textColor="#674188"
+            android:textSize="36dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="27dp"
+            android:alpha="0.8"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/input1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:alpha="0.9"
+                android:background="@drawable/text_background"
+                android:ems="10"
+                android:fontFamily="@font/inter"
+                android:hint="Enter First Number"
+                android:textColor="#674188"
+                android:inputType="number"
+                android:paddingLeft="12dp" />
+
+            <EditText
+                android:id="@+id/input2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_background"
+                android:ems="10"
+                android:fontFamily="@font/inter"
+                android:hint="Enter Second Number"
+                android:inputType="number"
+                android:textColor="#674188"
+                android:paddingLeft="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_background"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textoperation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/inter"
+                    android:text="> Operation"
+                    android:textColor="#674188"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grupradio">
+
+                    <RadioButton
+                        android:id="@+id/jumlah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  +"
+                        android:textSize="24dp" />
+
+                    <RadioButton
+                        android:id="@+id/kurang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   -"
+                        android:textSize="24dp" />
+
+                    <RadioButton
+                        android:id="@+id/bagi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   :"
+                        android:textSize="24dp" />
+
+                    <RadioButton
+                        android:id="@+id/kali"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   x"
+                        android:textSize="24dp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonhitung"
+            android:layout_width="100dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+
+            android:text="->" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
